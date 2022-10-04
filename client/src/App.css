@@ -1,0 +1,121 @@
+.App {
+  text-align: center;
+}
+
+.Header {
+  position: relative;
+  top: 0; /* Stick it to the top */
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  /* align-items: center;
+  justify-items: center; */
+  background-color:whitesmoke;
+  border-radius: 5px;
+  height:fit-content;
+  padding: 20px 20px;
+}
+.navbar a {
+  color: rgb(20, 20, 207);
+  font-size: 20px;
+  font-weight: 500;
+  transition: 0.5s;
+  text-decoration: none;
+}
+.navbar a:hover {
+  transform: scale(1.1);
+}
+
+.navbar button {
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  color: rgb(83, 71, 170);
+  font-weight: 600;
+  background-color: rgba(255, 0, 0, 0.5);
+  box-shadow: 0px 5px 0px 0px rgba(255, 0, 0, 0.25);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 70ms;
+}
+
+.navbar button:active {
+  transform: translateY(3px);
+  box-shadow: 0px 2px 0px 0px rgba(255, 0, 0, 0.25);
+}
+
+img {
+  width: 33.33%;
+  height:200px;
+  padding: 5px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(236, 232, 232, 0.2);
+  background-color: rgb(242, 244, 245);
+  width: 90%;
+  text-align: center;
+  font-family: arial;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 2%;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(236, 232, 232, 0.2);
+  background-color: rgb(240, 244, 243);
+  width: 50%;
+  text-align: center;
+  font-family: arial;
+  border-radius: 10px;
+  display: inline-block;
+  margin: 2%;
+}
+.card2:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.save {
+  background-color: red;
+  color: aliceblue;
+  margin: 2%;
+  float: right;
+  padding: 3px 5px;
+}
+
+
+@media screen and (max-width: 500px) {
+  Header {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: fit-content;
+    flex-direction: column;
+    overflow: hidden;
+  }
+
+  
+  .navbar {
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: none;
+    grid-row-gap: 20px;
+    padding: 30px 0 30px;
+    background: rgba(181, 170, 94, 0.95);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+}
+
